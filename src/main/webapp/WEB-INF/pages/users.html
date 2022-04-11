@@ -25,19 +25,19 @@
 
             <td>
                 <form th:action="@{users/edit/{id}(id=${user.id})}" th:object="${user}">
-                    <button type="submit">Изменить</button>
+                    <button style="background:#bfe3ef" type="submit">Изменить</button>
                 </form>
             </td>
             <td>
                 <form th:action="@{users/delete(id=${user.id})}" th:object="${user}">
                     <input type="hidden" name="id" th:value="${user.id}">
-                    <button type="submit">Удалить</button>
+                    <button style="background:#f3bfae" type="submit">Удалить</button>
                 </form>
             </td>
         </tr>
     </table>
     <form th:action="@{users/add}">
-        <button type="submit">Добавить нового пользователя</button>
+        <button style="background:#bfe3ef" type="submit">Добавить нового пользователя</button>
     </form>
 </div>
 

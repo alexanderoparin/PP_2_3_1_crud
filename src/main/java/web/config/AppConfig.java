@@ -25,7 +25,6 @@ public class AppConfig extends AbstractAnnotationConfigDispatcherServletInitiali
         };
     }
 
-
     /* Данный метод указывает url, на котором будет базироваться приложение */
     @Override
     protected String[] getServletMappings() {
